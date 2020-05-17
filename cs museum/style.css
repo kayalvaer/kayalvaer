@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0; 
+ }
+ body {
+    font-family: 'Montserrat', sans-serif;
+    color:#777777;
+ } 
+  /* header */
+  
+  .header {
+    background-color: rgb(207, 213, 212);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 3;
+   
+  }
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(207, 213, 212);
+  }
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  .header li a:hover,
+  .header .nav-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* nav */
+  
+  .header .nav-list {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+
+   /* nav icon */
+  
+   .header .nav-icon {
+    cursor: pointer;
+    float: center;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  .header .nav-icon .nav-bar {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .header .nav-icon .nav-bar:before,
+  .header .nav-icon .nav-bar:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .header .nav-icon .nav-bar:before {
+    top: 5px;
+  }
+  
+  .header .nav-icon .nav-bar:after {
+    top: -5px;
+  }
+   /* nav btn */
+  
+   .header .nav-btn {
+    display: none;
+  }
+  
+  .header .nav-btn:checked ~ .nav-list {
+    max-height: 450px;
+  }
+  
+  .header .nav-btn:checked ~ .nav-icon .nav-list {
+    background: transparent;
+  }
+  
+  .header .nav-btn:checked ~ .nav-icon .nav-list:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .nav-btn:checked ~ .nav-icon .nav-list:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .nav-btn:checked ~ .nav-icon:not(.steps) .nav-list:before,
+  .header .nav-btn:checked ~ .nav-icon:not(.steps) .nav-list:after {
+    top: 0;
+  }
+
+   /* navigation media 48em = 768px */
+  
+   @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .nav-list {
+        clear: none;
+        float: right;
+        max-height: none;
+      }
+    .header .nav-icon {
+      display: none;
+    }
+    #logo-img {
+        max-block-size: 3.2vh;   
+    }
+  }
+  #logo-img {
+    max-block-size: 3.4rem;
+    margin: 0 auto;
+    padding: 15px 0;
+    overflow: auto;
+    float: left;
+    display: flex;  
+    }
+    
+ /*---Main-image---*/
+ 
+ #main-image{
+    height: 700px;
+    width: 100%;
+    background: url("./assets/images/exhibition-1863344_1920.jpg") no-repeat center center;
+ 
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+ } 
+ #main-area {
+     height: 600px;
+     width: 100%;
+     overflow: hidden;
+     position: relative;
+ }
+ @keyframes hero-zoom {
+    from {
+     transform: scale(1);
+    } 
+    to {
+     transform: scale(1.1);
+    } 
+  }
+  #cover-text{
+     font-size: 130%;
+     font-family: Oswald;
+     text-transform: uppercase;
+     letter-spacing: 4px;
+  
+     width: 400px;
+     height: 400px;
+  
+     padding-top: 40px;
+     padding-left: 10px;
+  
+     background-color: rgba(241, 109, 107, .7);
+  
+     bottom: 10px;
+     right: 100px;
+     position: absolute;
+  } 
+  h1 {
+    font-size: 4rem;
+    color: #333;
+    }
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #555555;
+    }
+    span {
+        font-style: italic;  
+        color: #D705F2;
+        font-size: xx-large;
+    }
+    .join-us {
+        text-transform: lowercase;
+        font-weight: 100;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    #left-explore{
+        padding-top: 30px;
+        width: 33%;
+        float: left;
+     
+     } 
+     #right-explore{
+        padding-top: 30px;
+        width: 33%;
+        float: right;
+       
+     } 
+     #center-explore{
+        width: 33%;
+        margin: 0 auto;
+     } 
+     .left-explore-heading{
+        width: 50%;
+        float: right;
+        line-height: 20px;
+        clear: both;
+        margin-bottom: 50px;
+     }
+     hr{
+        border-top: 1px solid #777777;
+        width: 100%;
+        margin: 5px 0;
+     } 
+     .right-explore-heading{
+        width: 50%;
+        float: left;
+        line-height: 20px;
+        clear: both;
+        margin-bottom: 50px;
+     }
+     .right-explore-heading h2, .right-explore-heading p{
+       text-align: right;
+     }
+     #explore-intro{
+        margin: 20px 0;
+        text-align: center;
+        font-size: 280%;
+     } 
+     #round-container{
+        width: 300px;
+        height: 300px;
+        padding: 0px;
+        border: 1px solid #cccccc;
+        border-width: 1px;
+        border-radius:50%;
+        margin: 0 auto;
+             
+     } 
+    
+     #round-cover-bg{
+        background: url("./assets/images/reading-2762010_1280.jpg") no-repeat center center;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    
+     } 
+     @media screen and (max-width: 1393px ) {
+        #explain-main {
+              width: 65%;
+              height: 1200px;
+              margin: 0 auto;
+        } 
+        #explore-intro {
+              padding: 30px 0;
+              margin-top: 0;
+        }
+        #left-explore, #right-explore{
+              width: 100%;
+              float: left;
+              padding: 0;
+        }
+          #center-explore {
+              clear:both;
+              width: 100%;
+              float: left;
+              padding: 0;
+        }
+        hr {
+            display:none;
+        } 
+        #exhibit-div{
+            width: 100%;
+            clear: both;
+            height: 150%;
+            border-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: #fff;
+            padding: 0;
+        } 
+      
+      } 
+      @media screen and (max-width: 943px) {
+        #menu {
+            clear: left;
+            float: left;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            line-height: 25px;
+        }
+        #cover-text {
+          left: 0px;
+        }  
+        #explore-main {
+          width: 90%;
+          height: 1200px;
+          margin: 0 auto;
+        }
+        .left-explore-heading, .right-explore-heading {
+          width: inherit;
+        }
+        .left-explore-heading h2, .right-explore-heading h2{
+          width: 100%;
+          text-align: center;
+        } 
+        .left-explore-heading p, .right-explore-heading p{
+          text-align: center;
+          padding: 0 20px 0 20px;
+        } 
+        #photo {
+          column-count:3;
+        }     
+      }
+
