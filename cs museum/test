@@ -1,0 +1,182 @@
+     #table-main{
+        
+          column-gap: 20px;
+          text-align: left;
+          columns: auto;
+          padding: 200px 5px 50px 150px;
+          border-style: groove;
+          border: 5px solid #95ACBF;
+          font-family: 'Montserrat', sans-serif;
+          padding-top: 25vh;
+          margin-top: 0;
+         
+          }
+
+      
+
+      tr {
+         text-align: right;
+            }
+      td {
+          padding-left: 3vh;
+                }
+      
+          
+      th {
+          display: flex;
+          justify-content: space-around;
+          flex: 2;
+          padding: 10px ;
+          flex-direction: row;
+         
+                }
+
+      .table-hours {
+        column-count: 2;
+        text-align: left;
+        font-size: 20px;
+        font-weight: lighter;
+        flex-basis: 30%;
+        padding: 20px;
+        box-sizing: content-box;
+        padding: 5vh 2vh 15vh 20vh;        
+          }
+
+                <!-- *****************  Exhibition  ***************** -->
+    <main>
+        <div id="exhibit-main">
+            <div id="exhibit-container" style="width: 100%">
+                    <p>This layout is responsive. It adjusts and changes layout as you resize the view. It uses media queries to change the styles at various viewport sizes.</p>
+                    <p>To resize the view, go to the bottom right corner and drag to change the width and height</p>
+             </div>
+             
+                    <img src="./assets/images/toa-heftiba-412579.jpg" id="img-exhibit" alt="Hands typing on a laptop keyboard" width="100%">
+                    <figcaption>dinasaours</figcaption>
+            </div>
+            <div id="exhibit-main">
+            <div id="exhibit-container" style="width: 100%">
+                    <p>This layout is responsive. It adjusts and changes layout as you resize the view. It uses media queries to change the styles at various viewport sizes.</p>
+                    <p>To resize the view, go to the bottom right corner and drag to change the width and height</p>
+                </div>
+                
+                    <img src="./assets/images/boyreading-2762010_1280-1 (dragged).tiff" id="img-exhibit" alt="Hands typing on a laptop keyboard" width="100%">
+                    <figcaption>boy reading</figcaption>
+            </div>
+            <div id="exhibit-main">
+            <div id="exhibit-container" style="width: 100%">
+                    <p>This layout is responsive. It adjusts and changes layout as you resize the view. It uses media queries to change the styles at various viewport sizes.</p>
+                    <p>To resize the view, go to the bottom right corner and drag to change the width and height</p>
+                </div>
+                
+                    <img src="./assets/images/samuel-zeller-113381.jpg" id="img-exhibit" alt="Hands typing on a laptop keyboard" width="100%">
+                    <figcaption>human body</figcaption>
+            </div>
+            <div id="exhibit-main">
+            <div id="exhibit-container" style="width: 100%">
+                    <p>This layout is responsive. It adjusts and changes layout as you resize the view. It uses media queries to change the styles at various viewport sizes.</p>
+                    <p>To resize the view, go to the bottom right corner and drag to change the width and height</p>
+                </div>
+                
+                    <img src="./assets/images/heart-2607178_1920.jpg" id="img-exhibit" alt="Hands typing on a laptop keyboard" width="100%">
+                    <figcaption>heart</figcaption>
+            </div>
+
+           article{
+            border: solid 2px #fafafa;
+            height: 400px;
+            width: 65%;
+            float: left;
+            }
+            aside{
+              border: solid 2px #fafafa;
+              height: 400px;
+              width: 30%;
+              float: center;
+              } 
+
+                .table-main{
+          display: flex;
+          flex-direction: row;
+          }   
+         
+         article{
+            flex: 4;
+           float: left;
+            }
+          aside{
+              flex: 1;
+              float: right;
+              overflow: scroll;
+              resize: both;
+              height: 350px;
+              width: 350px;
+              }  
+
+
+#map-div-three{
+         
+  text-align: center;
+  padding: -800px 0 0px 0;
+  float: right;
+  overflow: scroll;
+  color: #157acc;
+  height: 500px;
+  width: 500px;
+  float: right;
+  padding-right: 5vh;
+  display: relative;
+  margin-bottom: 100px;
+
+}
+
+#map-div-three{
+  float:right;
+  width:31.666667%; /*380 / 1200 */
+  margin-right:2.5%; /* 30/1200 */
+  flex: 1;
+}
+
+
+/* About */
+
+<section id="abt-act-main">
+            <div class="abt-act-img">
+                <div class="abt-img"></div>
+            </div>
+            <div class="abt-act-act">
+                    <h2 class="abt-intro-text">Come and Join Us.</h2>
+                    <span class="abt-info">Are you a researcher looking for a home, or a student looking for an internship.
+                    </span>
+                    <a href="contact.html" class="btn">Find Out here</a>
+            </div>
+        </section>
+
+            <!-- ***************** Explore-main ***************** -->
+         <section id="exp-act-main">
+          <div id="exp-act-img"></div>
+          <div id="exp-intro-txt">
+             <a href="index.html" class="btn">Click to get involved</a>
+          </div>
+      </section>
+
+
+#logo-img {
+  max-block-size: 3.2vh;   
+}
+
+  
+       <!-- *****************  Events   ***************** -->
+
+    <section class="events-main">
+     <div class="events">
+       <div class="events-container">
+        <div class="events-content">
+          <img src="./assets/images/scientific-2040795_1280.jpg">
+            <div class="events-title">
+              <h3>Visiting professor of Aeronautics</h3>
+              <button class="btn-abt">Book</button>
+            </div>
+        </div>
+      </div>
+     </div>
+    </section>
